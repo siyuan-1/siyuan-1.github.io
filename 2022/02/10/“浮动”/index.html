@@ -9,7 +9,7 @@
     
     <title>
         
-            Archive: 2022/3 |
+            浮动 |
         
         SiYuan&#39;s blog
     </title>
@@ -154,73 +154,131 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="archive-container ">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">浮动</span>
+        </div>
+
         
-<div class="archive-list-container">
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="https://img2.baidu.com/it/u=3176371145,3762902143&fm=253&fmt=auto&app=138&f=JPEG?w=400&h=400">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">SiYuan&#39;s blog</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-02-10 19:54:47</span>
+        <span class="mobile">2022-02-10 19:54</span>
+    </span>
     
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2022</span>
-                <span class="archive-year-post-count">[7]</span>
-            </div>
-            <ul class="article-list">
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/04/17/%E7%AE%80%E5%8D%95%E7%9A%84axios/"
-                        >简单的axios</a>
-                        <span class="article-date">04-17</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/04/06/%E5%8E%9F%E5%9E%8B%E9%93%BE/"
-                        >原型链</a>
-                        <span class="article-date">04-06</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/04/06/My-New-Post/"
-                        >数据绑定</a>
-                        <span class="article-date">04-06</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/04/01/%E5%8E%9F%E5%9E%8B/"
-                        >原型</a>
-                        <span class="article-date">04-01</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/03/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"
-                        >数组</a>
-                        <span class="article-date">03-27</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/03/18/hello-world/"
-                        >Hello World</a>
-                        <span class="article-date">03-18</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/02/10/%E2%80%9C%E6%B5%AE%E5%8A%A8%E2%80%9D/"
-                        >浮动</a>
-                        <span class="article-date">02-10</span>
-                    </li>
-                
-            </ul>
-        </section>
+    
+
+    
+    
+    
     
 </div>
 
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>float  通过浮动可以使一个元素向其父元素的左侧或右侧移动。</p>
+<pre><code>        可选值：
+              none （默认值）元素不浮动
+              left   元素向左浮动
+              right  元素向右移动
+              
+        注意： 
+             元素设置浮动以后，水平布局的等式便不需要强制成立。
+                     
+ 1. 浮动元素会完全脱离文档流，不在占据文档流的位置。                 
+ 2. 元素脱离文档流后，元素类型就转化为行内块元素。
+ 3. 浮动元素只会在父元素中的左侧或右侧移动，默认不会从父元素中移除。
+ 4. 浮动元素之间默认是按照某个方向排列，不会覆盖。但是可以通过margin属性，产生覆盖功能。【双飞翼布局】
+ 
+ 6. 浮动元素的影响:    
+             1) 浮动的最初设计是用于设置文字环绕图片的效果。
+                浮动元素不会遮盖文字，文字会自动环绕在浮动元素周围，产生文字环绕图片的效果。        
+                        
+                        如果浮动元素遮盖的是行内元素，那么元素就会环绕浮动元素。
+                        如果浮动元素遮盖的是块级元素，那么只有元素内的内容会环绕浮动元素。
+                            
+
+             2) 浮动元素对相邻非浮动元素的影响:
+                         a.浮动元素对上面元素的影响：
+                                浮动元素的上面是一个块级元素，则浮动元素无法上移。
+                                浮动元素的上面是一个行内元素，则浮动元素会上移。并且会产生文字环绕图片效果。
+                        
+                        b. 浮动元素对下面元素的影响：
+                                浮动元素浮动时，会完全脱离文档流。
+                                下面的正常元素的会自动向上移动。并且会产生文字环绕图片效果。 
+                                            如果是行内元素，那么行内元素会环绕浮动元素。
+                                            如果是块级元素，那么只有块级元素中的内容会环绕浮动元素。
+                        
+                            
+             3) 浮动元素对相邻浮动元素的影响：
+                            a. 浮动元素只会在浮动层自左至右自动排列（浮动层，我理解的）。如果溢出，就会换行。
+                            b. 浮动元素不会超过它前面其他浮动元素。最多最多就是和它一样齐平。
+                                    
+                             
+                                           
+            
+             4) 浮动元素对父元素的影响：
+                                    高度塌陷
+</code></pre>
+<p>浮动元素会自动转化为行内块元素</p>
+<pre><code>    浮动元素会完全脱离文档流，不在占据文档流中的位置。
+    浮动元素会自动转化为行内块元素。
+
+    行内块元素：1.不独占一行。
+               2.可以设置宽高
+               3.可以设置margin、padding、padding。
+</code></pre>
+
+        </div>
+
+        
+
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2022/03/18/hello-world/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+            </div>
+        
+
+        
     </div>
 </div>
+
 
                 
             </div>
@@ -250,6 +308,23 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-bottom-side-tools">
@@ -296,6 +371,14 @@
     </div>
 
     
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89"><span class="nav-text">定义</span></a></li></ol>
+    </div>
+</div>
+        </aside>
+    
 
     <div class="image-viewer-container">
     <img src="">
@@ -331,6 +414,14 @@
 
 
 <div class="post-scripts">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
     
 </div>
 
